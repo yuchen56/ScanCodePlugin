@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ScanCodePlugin" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ScanCodePlugin</name>
+    <js-module name="ScanCodePlugin" src="www/ScanCodePlugin.js">
+        <clobbers target="cordova.plugins.ScanCodePlugin"/>
+    </js-module>
+    <platform name="android">
+        <source-file src="src/com/scan/plugin/ScanCodePlugin.java"
+                     target-dir="src/com/scan/plugin"/>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ScanCodePlugin">
+                <param name="android-package" value="com.scan.plugin.ScanCodePlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+            <uses-permission android:name="android.permission.CAMERA"/>   
+            <uses-permission android:name="android.permission.FLASHLIGHT"/> 
+             <uses-permission android:name="android.permission.WRITE_SETTINGS"/> 
+             <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/> 
+             <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>  
+            <uses-permission android:name="android.permission.GET_TASKS"/>
+        </config-file>
+
+    </platform>
+</plugin>
