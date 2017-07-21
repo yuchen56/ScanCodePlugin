@@ -60,7 +60,7 @@ public class ScanCodePlugin extends CordovaPlugin {
         }
 
         public void sendDataToJs(){
-            if(null != getScanCodeMth.GetBarCode()){
+            if(null != getScanCodeMth.GetBarCode() && null != mCallbackContext){
                 mCallbackContext.success(getScanCodeMth.GetBarCode());
             }
         }
