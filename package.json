@@ -1,0 +1,25 @@
+{
+  "name": "ScanCodePlugin",
+  "version": "1.0.1",
+  "description": "scan code",
+  "cordova": {
+    "id": "ScanCodePlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yuchen56@github.com/yuchen56/ScanCodePlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "YuYongChen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuchen56/ScanCodePlugin/issues"
+  },
+  "homepage": "https://github.com/yuchen56/ScanCodePlugin#readme"
+}
