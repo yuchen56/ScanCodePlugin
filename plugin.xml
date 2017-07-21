@@ -6,7 +6,7 @@
         <clobbers target="cordova.plugins.ScanCodePlugin"/>
     </js-module>
     <platform name="android">
-        <source-file src="src/com/scan/plugin/ScanCodePlugin.java"
+        <source-file src="src/android/com/scan/plugin/ScanCodePlugin.java"
                      target-dir="src/com/scan/plugin"/>
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="ScanCodePlugin">
