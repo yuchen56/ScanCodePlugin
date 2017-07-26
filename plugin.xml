@@ -8,6 +8,14 @@
     <platform name="android">
         <source-file src="src/android/com/scan/plugin/ScanCodePlugin.java"
                      target-dir="src/com/scan/plugin"/>
+        <source-file src="src/android/com/scan/mode/Barcodemode.java"
+                     target-dir="src/com/scan/mode"/>
+        <source-file src="src/android/com/scan/uint/ScanHelper.java"
+                     target-dir="src/com/scan/uint"/>
+        <source-file src="src/android/com/scan/uint/SysBarcodeUtil.java"
+                     target-dir="src/com/scan/uint"/>
+
+
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="ScanCodePlugin">
                 <param name="android-package" value="com.scan.plugin.ScanCodePlugin"/>
